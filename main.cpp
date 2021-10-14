@@ -1,6 +1,7 @@
 #include <iostream>
 #include <fstream>
-#include <string>
+#include <cstring>
+#include <cstdlib>
 using namespace std;
 
 int keyGen(string line, int C, int p);
@@ -23,19 +24,20 @@ int main (int argc , char *argv[])
 
   // load figures
   string line; //temp reading string
-  ifstream parameterFile(pFileName);
+  ifstream parameterFile(pFileName.c_str());
   getline(parameterFile,line);
-  const int p = stoi(line);
+  const int p = atoi(line.c_str());
   primaryArrSize = p;
   getline(parameterFile,line);
-  const int C = stoi(line);
+  const int C = atoi(line.c_str());
   //cout<<p<<"  "<<C;
   parameterFile.close();
 
   // first pass
-  int chainSize[p] = {0};
+  int chainSize[p];
+  memset( chainSize, 0, p*sizeof(int));
   int tempKey = -1;
-  ifstream dataFile(dFileName);
+  ifstream dataFile(dFileName.c_str());
   while(getline(dataFile,line)){
     tempKey = keyGen(line, C, p);
     //cout<<tempKey; 
@@ -61,7 +63,7 @@ int main (int argc , char *argv[])
 
   // second pass
   int tempKey2 = -1;
-  ifstream dataFile2(dFileName);
+  ifstream dataFile2(dFileName.c_str());
   while(getline(dataFile2,line)){
     tempKey2 = keyGen(line, C, p);
     //cout<<tempKey; 
@@ -118,7 +120,7 @@ int main (int argc , char *argv[])
   cout<<"Queries"<<endl;
   if(queryMode){
     string qFilename  = argv[3];
-    ifstream queryFile(qFilename);
+    ifstream queryFile(qFilename.c_str());
     while(getline(queryFile,line)){
       int key = keyGen(line,C,p);
       bool foundFlag = false;
