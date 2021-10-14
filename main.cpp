@@ -137,8 +137,15 @@ int main (int argc , char *argv[])
   }
 }
 
+int addition(int a, int b, int p){
+  int x = (a % p + b % p) % p;
+  return x;
+}
 
-
+int multiplication(int a, int b, int p){
+  int x = ((a % p) * (b % p)) % p;
+  return x;
+}
 
 int keyGen(string line, int C, int p){
   int len = line.length();
@@ -150,8 +157,8 @@ int keyGen(string line, int C, int p){
   int k = len - 1;
   int recB = d[k];
   while(k > 0){
-    recB = (d[k - 1] % p  + (((recB % p) * C) % p) ) % p;
-    k--;
+    recB = addition(d[k-1],multiplication(recB,C,p),p);
+    k-= 1;
   }
   return recB % p;
 }
