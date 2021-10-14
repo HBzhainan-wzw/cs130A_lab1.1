@@ -119,8 +119,9 @@ int main (int argc , char *argv[])
   }
   cout<<endl;
 
-  cout<<"Queries"<<endl;
+  
   if(queryMode){
+    cout<<"Queries"<<endl;
     string qFilename  = argv[3];
     ifstream queryFile(qFilename.c_str());
     while(getline(queryFile,line)){

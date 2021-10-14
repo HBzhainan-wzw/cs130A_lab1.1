@@ -9,4 +9,4 @@ main:
 
 
 clean:
-	rm main
+	rm project1
