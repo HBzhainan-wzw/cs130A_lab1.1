@@ -161,7 +161,6 @@ int keyGen(string line, int C, int p){
 
   int k = len - 1;
   int recB = d[k];
-  cout<<"0.0"<<endl;
   while(k > 0){
     recB = addition(d[k-1],multiplication(recB,C,p),p);
     k-= 1;
