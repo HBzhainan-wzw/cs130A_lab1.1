@@ -1,0 +1,35 @@
+Size of input: 47
+Number of words in table: 38
+Primary array size: 69767
+Maximum number of collisions in a hashbucket: 0
+The number of hashbuckets b with x elements:
+x=0 : b=69729
+x=1 : b=38
+x=2 : b=0
+x=3 : b=0
+x=4 : b=0
+x=5 : b=0
+x=6 : b=0
+x=7 : b=0
+x=8 : b=0
+x=9 : b=0
+x=10 : b=0
+x=11 : b=0
+x=12 : b=0
+x=13 : b=0
+x=14 : b=0
+x=15 : b=0
+x=16 : b=0
+x=17 : b=0
+x=18 : b=0
+x=19 : b=0
+x=20 : b=0
+Keys in most populated bucket: I 
+
+Queries
+Key "I" exists at (73, 0).
+Key "myself" exists at (21067, 0).
+Key "that" exists at (33073, 0).
+Key "and" exists at (21401, 0).
+Key "the" exists at (62710, 0).
+Key "in" exists at (3396, 0).

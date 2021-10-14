@@ -1,0 +1,27 @@
+Size of input: 349900
+Number of words in table: 349900
+Primary array size: 70717
+Maximum number of collisions in a hashbucket: 16
+The number of hashbuckets b with x elements:
+x=0 : b=465
+x=1 : b=2368
+x=2 : b=6245
+x=3 : b=10155
+x=4 : b=12702
+x=5 : b=12400
+x=6 : b=10136
+x=7 : b=7220
+x=8 : b=4438
+x=9 : b=2431
+x=10 : b=1270
+x=11 : b=531
+x=12 : b=211
+x=13 : b=94
+x=14 : b=36
+x=15 : b=10
+x=16 : b=4
+x=17 : b=1
+x=18 : b=0
+x=19 : b=0
+x=20 : b=0
+Keys in most populated bucket: amalrician copiapite featherers galimatias ganodonta gitega huddy lowlander mestome musical nightshades preloaded preoriginal torrie unprelatic whirlpools woodsier 

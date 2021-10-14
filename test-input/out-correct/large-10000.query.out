@@ -1,0 +1,36 @@
+Size of input: 10000
+Number of words in table: 10000
+Primary array size: 69767
+Maximum number of collisions in a hashbucket: 3
+The number of hashbuckets b with x elements:
+x=0 : b=60444
+x=1 : b=8672
+x=2 : b=627
+x=3 : b=22
+x=4 : b=2
+x=5 : b=0
+x=6 : b=0
+x=7 : b=0
+x=8 : b=0
+x=9 : b=0
+x=10 : b=0
+x=11 : b=0
+x=12 : b=0
+x=13 : b=0
+x=14 : b=0
+x=15 : b=0
+x=16 : b=0
+x=17 : b=0
+x=18 : b=0
+x=19 : b=0
+x=20 : b=0
+Keys in most populated bucket: feels identifier justice topics 
+
+Queries
+Key "outcomes" exists at (20019, 0).
+Key "chess" exists at (27259, 0).
+Key "otter" does not exist.
+Key "simulation" exists at (22696, 0).
+Key "png" does not exist.
+Key "trays" does not exist.
+Key "louisville" exists at (14864, 0).

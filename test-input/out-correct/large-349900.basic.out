@@ -1,0 +1,27 @@
+Size of input: 349900
+Number of words in table: 349900
+Primary array size: 69767
+Maximum number of collisions in a hashbucket: 16
+The number of hashbuckets b with x elements:
+x=0 : b=466
+x=1 : b=2377
+x=2 : b=5765
+x=3 : b=9701
+x=4 : b=12264
+x=5 : b=12254
+x=6 : b=10117
+x=7 : b=7358
+x=8 : b=4630
+x=9 : b=2575
+x=10 : b=1291
+x=11 : b=585
+x=12 : b=254
+x=13 : b=93
+x=14 : b=20
+x=15 : b=14
+x=16 : b=2
+x=17 : b=1
+x=18 : b=0
+x=19 : b=0
+x=20 : b=0
+Keys in most populated bucket: arphad bebops chloroforms daydreamt desyatin echoed igedde kibum kretschmar malingered meetness metallica olem sanka semiegg struve unkilned 
