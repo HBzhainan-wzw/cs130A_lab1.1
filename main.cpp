@@ -151,6 +151,9 @@ int multiplication(int a, int b, int p){
 
 int keyGen(string line, int C, int p){
   int len = line.length();
+  if(len == 0){
+    exit(1);
+  }
   int d[len];
   for(int i = 0; i < len; i++){
     d[i] = int(line[i]);
@@ -158,6 +161,7 @@ int keyGen(string line, int C, int p){
 
   int k = len - 1;
   int recB = d[k];
+  cout<<"0.0"<<endl;
   while(k > 0){
     recB = addition(d[k-1],multiplication(recB,C,p),p);
     k-= 1;

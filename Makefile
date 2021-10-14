@@ -4,9 +4,9 @@ all: main
 
 main: 
 
-	g++ main.cpp -o main
+	g++ main.cpp -o project1
 
 
 
 clean:
-	rm *.o 
+	rm main
