@@ -4,7 +4,9 @@
 #include <cstdlib>
 using namespace std;
 
+int addition(int a, int b, int p);
 int keyGen(string line, int C, int p);
+int multiplication(int a, int b, int p);
 
 int main (int argc , char *argv[])
 {
