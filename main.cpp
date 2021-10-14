@@ -50,16 +50,9 @@ int main (int argc , char *argv[])
 
   //generating array according to chainsize
   string* primaryArr[p];
-  maxCollision = chainSize[0];
   for(int i = 0; i < p; i++){
-    if(chainSize[i] > maxCollision){
-      maxCollision = chainSize[i];
-    }
     string* tempPtr = new string[chainSize[i]]();
     primaryArr[i] = tempPtr;
-  }
-  if(maxCollision > 0){
-    maxCollision--;
   }
   
 
@@ -89,6 +82,17 @@ int main (int argc , char *argv[])
     }
   }
   dataFile2.close();
+
+  maxCollision = chainSize[0];
+  for(int i = 0; i < p; i++){
+    if(chainSize[i] > maxCollision){
+      maxCollision = chainSize[i];
+    }
+  }
+  if(maxCollision > 0){
+    maxCollision--;
+  }
+
 
   // iterate through the table and collect buckets information
   int popularKeySize = chainSize[0];
