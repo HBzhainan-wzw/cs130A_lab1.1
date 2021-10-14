@@ -141,24 +141,17 @@ int main (int argc , char *argv[])
 
 
 int keyGen(string line, int C, int p){
-  //cout<<p<<"  "<<C<<"  "<<line<<endl;
   int len = line.length();
   int d[len];
   for(int i = 0; i < len; i++){
     d[i] = int(line[i]);
-    //cout<<d[i]<<"  ";
   }
-  //cout<<endl;
+
   int k = len - 1;
   int recB = d[k];
   while(k > 0){
-    recB = recB % p;
-    recB = (recB * C) % p;
-    recB = recB + d[k-1] % p;
-    recB = recB % p;
-    k = k - 1;
+    recB = (d[k - 1] % p  + (((recB % p) * C) % p) ) % p;
+    k--;
   }
-
-  //cout<<"final:  "<<recB<<endl;
   return recB % p;
 }
