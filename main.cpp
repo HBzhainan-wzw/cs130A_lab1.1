@@ -150,15 +150,23 @@ int addition(int a, int b, int p){
 }
 
 int multiplication(int a, int b, int p){
-  int x = ((a % p) * (b % p)) % p;
-  return x;
+  int ap = a % p;
+  int bp = b % p;
+  int x = (ap * bp) % p;
+  int i = 0;
+  int y = 0;
+  int result;
+  while(x < 0 || y < 0 || x + y < 0){
+    i = i + 20;
+    x = (i * ap) % p;
+    y = ((b-i) * a) % p;
+  }
+  result = x + y;
+  return result % p;
 }
 
 int keyGen(string line, int C, int p){
-  int len = line.length();
-  if(len == 0){
-    exit(1);
-  }
+  int len = line.size();
   int d[len];
   for(int i = 0; i < len; i++){
     d[i] = int(line[i]);
